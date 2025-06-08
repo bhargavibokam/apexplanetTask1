@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Save the Planet</title>
+    <style>
+      * {
+        margin: 20px;
+      }
+      body {
+        background-image: url("backgroundimg.png");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        font-size: 1.25rem;
+      }
+
+      nav {
+        padding: 0.25rem;
+        background-color: #333;
+        text-align: center;
+        border: none;
+        border-radius: 1rem;
+      }
+
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav li {
+        display: inline-block;
+        margin-right: 20px;
+      }
+
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1rem;
+      }
+
+      nav a:hover {
+        color: #ccc;
+      }
+
+      .header {
+        text-align: center;
+      }
+      h1 {
+        font-size: 3rem;
+        margin-bottom: 0.25rem;
+      }
+
+      .tag {
+        font-size: 1rem;
+      }
+
+      img {
+        border: none;
+        border-radius: 1rem;
+      }
+      button {
+        height: 2rem;
+        width: 7rem;
+        border-radius: 1rem;
+        background-color: #f6f6f6f0;
+        color: green;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      button:hover {
+        color: #333;
+      }
+      .options {
+        display: flex;
+        gap: 1rem;
+      }
+
+      footer {
+        padding: 0.25rem;
+        text-align: center;
+        font-size: 1rem;
+      }
+
+      footer p {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#problem">The Problem</a></li>
+          <li><a href="#solutions">Solutions</a></li>
+          <li><a href="#take-action">Take Action</a></li>
+        </ul>
+      </nav>
+      <h1>Save the Planet</h1>
+      <p id="tag">-Every small action counts</p>
+    </header>
+    <main>
+      <section id="hero">
+        <h2>Join the Movement</h2>
+        <div><img src="image.png" alt="plant trees" /></div>
+        <p>
+          Our planet is facing unprecedented threats. Join us in taking action
+          to protect its natural resources and preserve its beauty for future
+          generations.
+        </p>
+        <button id="learn">Learn More</button>
+      </section>
+      <section id="problem">
+        <h2>The State of Our Planet</h2>
+        <p>
+          Our planet is facing numerous challenges that threaten its very
+          survival. Some of the most pressing issues include:
+        </p>
+        <ul>
+          <li>Climate Change</li>
+          <li>Deforestation and Land Degradation</li>
+          <li>Loss of Biodiversity</li>
+          <li>Water Scarcity and Conservation</li>
+          <li>Sustainable Resource Management</li>
+        </ul>
+      </section>
+      <section id="solutions">
+        <h2>Solutions for a Sustainable Future</h2>
+        <p>
+          There are many ways to address the environmental challenges facing our
+          planet. Here are some solutions:
+        </p>
+
+        <ul>
+          <li>Eco-Friendly Technologies</li>
+          <li>Renewable Energy</li>
+
+          <li>Sustainable Living</li>
+
+          <li>Conservation Efforts</li>
+        </ul>
+      </section>
+
+      <section id="take-action">
+        <h2>Get Involved and Make a Difference</h2>
+        <div class="options">
+          <button>Donate Now</button>
+          <button>Get Involved</button>
+          <button>Join the Movement</button>
+          <button>Take Action</button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2025 Your Organization</p>
+      <div>
+        <a href="#">Mail</a>
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Terms of Use</a>
+      </div>
+    </footer>
+    <script>
+      const learn = document.querySelector("#learn");
+      learn.addEventListener("click", () => {
+        alert("Learn more about saving the planet!");
+      });
+      const btn = document.querySelectorAll(".options");
+      btn.forEach((button) => {
+        button.addEventListener("click", () => {
+          alert("You're making a difference, one step at a time! 🌎");
+        });
+      });
+    </script>
+  </body>
+</html>
